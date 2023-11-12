@@ -8,10 +8,10 @@ obj-m += khello.o
 
 all:
 	mkdir -p /lib/modules/$(KVERSION)/build
-	make -C /lib/modules/$(KVERSION)/build M=$(PWD) modules
+	make -C /lib/modules/$(KVERSION)/build/ M=$(PWD) modules
 
 clean:
-	make -C /lib/modules/$(KVERSION)/build M=$(PWD) clean
+	make -C /lib/modules/$(KVERSION)/build/ M=$(PWD) clean
 
 
 .PHONY: all clean fclean re bonus run
