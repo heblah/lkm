@@ -14,4 +14,4 @@ clean:
 	make -C /lib/modules/$(KVERSION)/build/ M=$(PWD) clean
 
 
-.PHONY: all clean fclean re bonus run
+.PHONY: all clean
